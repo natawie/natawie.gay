@@ -2,16 +2,14 @@
   "name": "akurushimi.github.io",
   "version": "1.0.0",
   "scripts": {
-	"build": "npx postcss-cli src/css/styles.css -o src/css/compiled.css"
-
+    "build": "npx tailwindcss -c ./tailwind.config.js -o src/css/styles.css --minify",
+    "dev": "npx tailwindcss -c ./tailwind.config.js -o src/css/styles.css --watch"
   },
   "author": "akurushimi",
   "license": "ISC",
   "description": "my website",
   "devDependencies": {
-    "autoprefixer": "^10.3.1",
-    "postcss": "^8.3.5",
-    "postcss-cli": "^8.3.1",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "^3.0.18",
+    "postcss": "^8.4.5"
   }
 }
